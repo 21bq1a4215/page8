@@ -1,0 +1,15 @@
+class Solution:
+    def rotate(self, matrix: List[List[int]]) -> None:
+        """
+        Do not return anything, modify matrix in-place instead.
+        """
+        mat=list(map(list,zip(*matrix)))
+        for i in range(len(mat)):
+            mat[i]=mat[i][::-1]
+        matrix.clear()
+        for k in mat:
+            matrix.append(k)
+        
+        
+        
+        
